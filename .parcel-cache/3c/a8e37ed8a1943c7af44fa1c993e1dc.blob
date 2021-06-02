@@ -1,0 +1,45 @@
+import { createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createBlock as _createBlock, toDisplayString as _toDisplayString, createCommentVNode as _createCommentVNode, withScopeId as _withScopeId, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from "vue"
+const _withId = /*#__PURE__*/_withScopeId("data-v-d0034a")
+
+_pushScopeId("data-v-d0034a")
+const _hoisted_1 = { class: "container" }
+const _hoisted_2 = /*#__PURE__*/_createVNode("h1", null, "The Falmouth Foulmouths", -1 /* HOISTED */)
+const _hoisted_3 = { class: "cards" }
+const _hoisted_4 = { class: "card" }
+const _hoisted_5 = { class: "name" }
+const _hoisted_6 = { class: "skills" }
+_popScopeId()
+
+export const render = /*#__PURE__*/_withId((_ctx, _cache) => {
+  return (_openBlock(), _createBlock("div", _hoisted_1, [
+    _hoisted_2,
+    _createVNode("div", _hoisted_3, [
+      (_openBlock(true), _createBlock(_Fragment, null, _renderList(_ctx.data.profiles, (datum) => {
+        return (_openBlock(), _createBlock("div", _hoisted_4, [
+          _createVNode("div", _hoisted_5, _toDisplayString(datum.displayName), 1 /* TEXT */),
+          _createVNode("img", {
+            src: _ctx.getPic(datum)
+          }, null, 8 /* PROPS */, ["src"]),
+          _createVNode("div", _hoisted_6, [
+            _createCommentVNode("          <div class=\"skill\" >"),
+            _createCommentVNode("            {{skill.name}}"),
+            _createCommentVNode("          </div>"),
+            _createVNode("table", null, [
+              (_openBlock(true), _createBlock(_Fragment, null, _renderList(datum.skills, (skill) => {
+                return (_openBlock(), _createBlock("tr", null, [
+                  _createVNode("td", null, _toDisplayString(skill.name), 1 /* TEXT */),
+                  _createVNode("td", null, _toDisplayString(skill.score), 1 /* TEXT */)
+                ]))
+              }), 256 /* UNKEYED_FRAGMENT */))
+            ])
+          ])
+        ]))
+      }), 256 /* UNKEYED_FRAGMENT */))
+    ])
+  ]))
+})
+if (module.hot) {
+  module.hot.accept(() => {
+    __VUE_HMR_RUNTIME__.rerender('d0034a-hmr', render);
+  })
+}

@@ -1,0 +1,40 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "render", function () {
+  return render;
+});
+var _vue = require("vue");
+const _withId = /*#__PURE__*/_vue.withScopeId("data-v-d0034a");
+_vue.pushScopeId("data-v-d0034a");
+const _hoisted_1 = {
+  class: "container"
+};
+const _hoisted_2 = /*#__PURE__*/_vue.createVNode("h1", null, "The Falmouth Foulmouths", -1);
+const _hoisted_3 = {
+  class: "cards"
+};
+const _hoisted_4 = {
+  class: "card"
+};
+const _hoisted_5 = {
+  class: "name"
+};
+const _hoisted_6 = {
+  class: "skills"
+};
+_vue.popScopeId();
+const render = /*#__PURE__*/_withId((_ctx, _cache) => {
+  return (_vue.openBlock(), _vue.createBlock("div", _hoisted_1, [_hoisted_2, _vue.createVNode("div", _hoisted_3, [(_vue.openBlock(true), _vue.createBlock(_vue.Fragment, null, _vue.renderList(_ctx.data.profiles, datum => {
+    return (_vue.openBlock(), _vue.createBlock("div", _hoisted_4, [_vue.createVNode("div", _hoisted_5, _vue.toDisplayString(datum.displayName), 1), _vue.createVNode("img", {
+      src: _ctx.getPic(datum)
+    }, null, 8, /*PROPS*/
+    ["src"]), _vue.createVNode("div", _hoisted_6, [_vue.createCommentVNode("          <div class=\"skill\" >"), _vue.createCommentVNode("            {{skill.name}}"), _vue.createCommentVNode("          </div>"), _vue.createVNode("table", null, [(_vue.openBlock(true), _vue.createBlock(_vue.Fragment, null, _vue.renderList(datum.skills, skill => {
+      return (_vue.openBlock(), _vue.createBlock("tr", null, [_vue.createVNode("td", null, _vue.toDisplayString(skill.name), 1), _vue.createVNode("td", null, _vue.toDisplayString(skill.score), 1)]));
+    }), 256))])])]));
+  }), 256))])]));
+});
+if (module.hot) {
+  module.hot.accept(() => {
+    __VUE_HMR_RUNTIME__.rerender('d0034a-hmr', render);
+  });
+}

@@ -1,0 +1,160 @@
+{
+  "profiles": [
+    {
+      "name": "Juan",
+      "displayName": "Juan",
+      "skills": [
+        {
+          "name": "Coding",
+          "score": 9
+        },
+        {
+          "name": "Prototyping",
+          "score": 7
+        },
+        {
+          "name": "Music",
+          "score": 5
+        },
+        {
+          "name": "Game Design",
+          "score": 6
+        },
+        {
+          "name": "Ferret-legging",
+          "score": -1
+        }
+      ]
+    },
+    {
+      "name": "Josh",
+      "displayName": "Josh",
+      "skills": [
+        {
+          "name": "User Research",
+          "score": 7
+        },
+        {
+          "name": "Inclusive Design",
+          "score": 5
+        },
+        {
+          "name": "Interpersonal Skills",
+          "score": 9
+        },
+        {
+          "name": "Time Management",
+          "score": 6
+        },
+        {
+          "name": "Dad-bod",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "name": "Luis",
+      "displayName": "Luis",
+      "skills": [
+        {
+          "name": "Photography ",
+          "score": 9
+        },
+        {
+          "name": "UX Design",
+          "score": 6
+        },
+        {
+          "name": "User Research",
+          "score": 6
+        },
+        {
+          "name": "Visual Design",
+          "score": 8
+        },
+        {
+          "name": "Wine Experience",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "name": "Oli",
+      "displayName": "Oli",
+      "skills": [
+        {
+          "name": "Unity",
+          "score": 7
+        },
+        {
+          "name": "Interpersonal Skills",
+          "score": 8
+        },
+        {
+          "name": "Team Management",
+          "score": 7
+        },
+        {
+          "name": "2D Art",
+          "score": 7
+        },
+        {
+          "name": "Sleep Deprivation",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "name": "Maciej",
+      "displayName": "Matt",
+      "skills": [
+        {
+          "name": "Graphic Design",
+          "score": 8
+        },
+        {
+          "name": "Illustration",
+          "score": 8
+        },
+        {
+          "name": "Concept Art",
+          "score": 7
+        },
+        {
+          "name": "3D Modelling",
+          "score": 7
+        },
+        {
+          "name": "Befuddlement",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "name": "Template",
+      "displayName": "Template",
+      "skills": [
+        {
+          "name": "SkillA",
+          "score": 7
+        },
+        {
+          "name": "SkillB",
+          "score": 5
+        },
+        {
+          "name": "SkillC",
+          "score": 9
+        },
+        {
+          "name": "SkillD",
+          "score": 6
+        },
+        {
+          "name": "BonusSkill",
+          "score": 8
+        }
+      ]
+    }
+  ]
+}

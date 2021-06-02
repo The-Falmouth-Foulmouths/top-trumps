@@ -1,2 +1,5 @@
-# falmouth-foulmouths
-Top Trumps cards for my team at Falmouth
+# Wat?
+
+Top Trumps cards for team **Falmouth Foulmouths**.
+
+![Team Falmouth Foulmouths](./assets/falmouth-foulmouths.png)

@@ -1,0 +1,38 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _vue = require("vue");
+var _vueDefault = _parcelHelpers.interopDefault(_vue);
+var _assetsDataJson = require("./assets/data.json");
+var _assetsDataJsonDefault = _parcelHelpers.interopDefault(_assetsDataJson);
+var _assetsProfilepicsJuanPng = require("./assets/profilepics/Juan.png");
+var _assetsProfilepicsJuanPngDefault = _parcelHelpers.interopDefault(_assetsProfilepicsJuanPng);
+var _assetsProfilepicsJoshPng = require("./assets/profilepics/Josh.png");
+var _assetsProfilepicsJoshPngDefault = _parcelHelpers.interopDefault(_assetsProfilepicsJoshPng);
+var _assetsProfilepicsLuisPng = require("./assets/profilepics/Luis.png");
+var _assetsProfilepicsLuisPngDefault = _parcelHelpers.interopDefault(_assetsProfilepicsLuisPng);
+var _assetsProfilepicsOliPng = require("./assets/profilepics/Oli.png");
+var _assetsProfilepicsOliPngDefault = _parcelHelpers.interopDefault(_assetsProfilepicsOliPng);
+var _assetsProfilepicsMaciejPng = require("./assets/profilepics/Maciej.png");
+var _assetsProfilepicsMaciejPngDefault = _parcelHelpers.interopDefault(_assetsProfilepicsMaciejPng);
+var _assetsProfilepicsTemplatePng = require("./assets/profilepics/Template.png");
+var _assetsProfilepicsTemplatePngDefault = _parcelHelpers.interopDefault(_assetsProfilepicsTemplatePng);
+const pics = {
+  Juan: _assetsProfilepicsJuanPngDefault.default,
+  Josh: _assetsProfilepicsJoshPngDefault.default,
+  Luis: _assetsProfilepicsLuisPngDefault.default,
+  Oli: _assetsProfilepicsOliPngDefault.default,
+  Maciej: _assetsProfilepicsMaciejPngDefault.default,
+  Template: _assetsProfilepicsTemplatePngDefault.default
+};
+exports.default = _vueDefault.default.extend({
+  data() {
+    return {
+      data: _assetsDataJsonDefault.default
+    };
+  },
+  methods: {
+    getPic: function (datum) {
+      return pics[datum.name];
+    }
+  }
+});

@@ -1,0 +1,24 @@
+
+let script;
+let initialize = () => {
+  script = require('script:./App.vue');
+  if (script.__esModule) script = script.default;
+  script.render = require('template:./App.vue').render;
+  script.__cssModules = require('style:./App.vue').default;
+  require('custom:./App.vue').default(script);
+  script.__scopeId = 'data-v-d0034a';
+  script.__file = "/home/opyate/Documents/code/github-juanuys/falmouth-foulmouths/App.vue";
+};
+initialize();
+if (module.hot) {
+  script.__hmrId = 'd0034a-hmr';
+  module.hot.accept(() => {
+    setTimeout(() => {
+      initialize();
+      if (!__VUE_HMR_RUNTIME__.createRecord('d0034a-hmr', script)) {
+        __VUE_HMR_RUNTIME__.reload('d0034a-hmr', script);
+      }
+    }, 0);
+  });
+}
+export default script;
